@@ -25,6 +25,7 @@ open_search_client = OpenSearch(
 aws_rekognition_client = boto3.client('rekognition')
 
 def lambda_handler(event, context):
+    print("ADDED A PRINT LINE FOR CODEPIPELINE TESTING-1")
     print("Event is:{}".format(event))
     print("testing deployment pipeline")
     count = 0
